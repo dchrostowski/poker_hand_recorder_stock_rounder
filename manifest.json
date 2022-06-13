@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Web Socket Intercept Browser Extension",
+    "version": "0.0.1",
+    "description": "Logs websocket data",
+    "homepage_url": "https://github.com/dchrostowski/web-socket-intercept-browser-extension",
+    "icons": {
+        "120": "icon-120.svg",
+        "48": "icon-48.svg",
+        "128": "icon-128.svg"
+    },
+    "permissions": [
+        "webRequest",
+        "activeTab"
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "lib/socket-sniffer.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content/syringe.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ]
+}
