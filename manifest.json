@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Web Socket Intercept Browser Extension",
+    "name": "Stock & Rounder Hand Tracker",
     "version": "0.0.1",
     "description": "Logs websocket data",
     "homepage_url": "https://github.com/dchrostowski/web-socket-intercept-browser-extension",
