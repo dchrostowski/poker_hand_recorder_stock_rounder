@@ -1,11 +1,23 @@
 # Poker Hand Recorder For Stock Poker and Rounder Casino ###
 
-### How to use
-Install the Chrome extension and log in to your account at either https://stockpokeronline.com or https://roundercasino.com.   Join a cash game or tournament and play a few hands.  When you want to save your hand data type `Ctrl + S`, you should be prompted to save a file.
+## How to use
+
+### Installation
+Currently awaiting review at Chrome Web Store.  To use this before it is published follow these instructions:
+
+1. Download this repository as a zip file and unzip it to whatever folder you want on your computer
+2. Open a new Chrome tab and type in chrome://extensions in the URL bar
+3. Toggle the Developer Mode toggle in the upper right hand corner
+4. Click on Load Unpacked in the upper left hand folder
+5. Find the folder that you unzipped from the zip file, select it.
+6. The Chrome extension is now installed.
+
+### How to Use
+
+After installing the Chrome extension and log in to your account at either https://stockpokeronline.com or https://roundercasino.com.   Join a cash game or tournament and play a few hands.  When you want to save your hand data type `Ctrl + S`, you should be prompted to save a file.
 
 ### Format
 The hand data is modelled after PokerStars hand history file format.  A sample is shown below:
-
 
 ```
 StockPokerOnline Hand #9841172: Hold'em No Limit (300/600) - 2022/07/02 17:53:22 MDT [2022/07/02 23:53:22 UTC]
