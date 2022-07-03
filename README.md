@@ -1,4 +1,4 @@
-#### Poker Hand Recorder For Stock Poker and Rounder Casino ###
+# Poker Hand Recorder For Stock Poker and Rounder Casino ###
 
 ### How to use
 Install the Chrome extension and log in to your account at either https://stockpokeronline.com or https://roundercasino.com.   Join a cash game or tournament and play a few hands.  When you want to save your hand data type `Ctrl + S`, you should be prompted to save a file.
