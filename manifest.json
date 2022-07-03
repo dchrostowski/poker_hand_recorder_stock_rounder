@@ -13,6 +13,9 @@
         "webRequest",
         "activeTab"
     ],
+    "action": {
+        "default_icon": "icon.svg"
+    },
     "web_accessible_resources": [
         {
             "resources": [
@@ -34,6 +37,9 @@
             "run_at": "document_end"
         }
     ],
+    "background": {
+        "service_worker": "content/background.js"
+    },
     "host_permissions": [
         "<all_urls>"
     ]
