@@ -3,23 +3,24 @@
     "name": "Stock & Rounder Hand Tracker",
     "version": "0.0.1",
     "description": "Logs websocket data",
-    "homepage_url": "https://github.com/dchrostowski/web-socket-intercept-browser-extension",
+    "homepage_url": "https://github.com/dchrostowski/poker_hand_recorder_stock_rounder",
     "icons": {
-        "120": "icon-120.svg",
-        "48": "icon-48.svg",
-        "128": "icon-128.svg"
+        "120": "icon-120.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
     },
     "permissions": [
         "webRequest",
         "activeTab"
     ],
     "action": {
-        "default_icon": "icon.svg"
+        "default_icon": "icon.png"
     },
     "web_accessible_resources": [
         {
             "resources": [
-                "lib/socket-sniffer.js"
+                "lib/socket-sniffer.js",
+                "lib/jquery.min.js"
             ],
             "matches": [
                 "<all_urls>"
@@ -37,9 +38,6 @@
             "run_at": "document_end"
         }
     ],
-    "background": {
-        "service_worker": "content/background.js"
-    },
     "host_permissions": [
         "<all_urls>"
     ]

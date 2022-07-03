@@ -15,17 +15,22 @@ function init() {
 
 
 
+    const jQuery = document.createElement('script')
+    jQuery.src = webBrowser.runtime.getURL('lib/jquery.min.js')
+    jQuery.id = "injectedJQuery"
 
 
-    var s = document.createElement('script');
-    s.src = webBrowser.runtime.getURL('lib/socket-sniffer.js');
-    s.onload = function () {
+    const socketIntercept = document.createElement('script');
+    socketIntercept.src = webBrowser.runtime.getURL('lib/socket-sniffer.js');
+    socketIntercept.onload = function () {
         this.remove();
     };
 
 
+    const headOrBody = (document.head || document.body)
 
-    (document.head || document.body).appendChild(s)
+    headOrBody.appendChild(jQuery)
+    headOrBody.appendChild(modalLink)
 
     chrome.runtime.onMessage.addListener(
         function (request, sender, sendResponse) {
