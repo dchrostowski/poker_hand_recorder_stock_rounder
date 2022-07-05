@@ -30,7 +30,6 @@ function init() {
     const headOrBody = (document.head || document.body)
 
     headOrBody.appendChild(jQuery)
-    headOrBody.appendChild(modalLink)
 
     chrome.runtime.onMessage.addListener(
         function (request, sender, sendResponse) {
