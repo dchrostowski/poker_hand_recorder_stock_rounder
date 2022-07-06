@@ -30,6 +30,7 @@ function init() {
     const headOrBody = (document.head || document.body)
 
     headOrBody.appendChild(jQuery)
+    headOrBody.appendChild(socketIntercept)
 
     chrome.runtime.onMessage.addListener(
         function (request, sender, sendResponse) {
