@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Stock & Rounder Hand Tracker",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "description": "Saves poker hand data to local file for StockPokerOnline.com and RounderCasino.com",
     "homepage_url": "https://github.com/dchrostowski/poker_hand_recorder_stock_rounder",
     "icons": {
